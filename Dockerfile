@@ -6,4 +6,5 @@ RUN npm i
 COPY . .
 
 EXPOSE 80
-CMD ["node", "app.js"]
+CMD ["npm","install","pm2","-g"]
+CMD ["pm2", "start", "app.js"]
