@@ -38,7 +38,7 @@ app.use((err, req, res, next) => {
   return;
 })
 
-app.listen(80, ()=>{
-  console.log("Served started on Port 80");
+app.listen(8080, ()=>{
+  console.log("Served started on Port 8080");
 })
 module.exports = app;
