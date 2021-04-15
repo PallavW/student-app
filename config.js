@@ -3,7 +3,7 @@ const env = process.env;
 //localhost:3306/?user=root
 const config = {
   db: { 
-    host: env.DB_HOST || 'localhost',
+    host: env.DB_HOST || 'mysql-service',
     user: env.DB_USER || 'root',
     password: env.DB_PASSWORD || 'MySQL#16',
     database: env.DB_NAME || 'students',
