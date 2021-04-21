@@ -1,0 +1,57 @@
+=================
+oc
+oc completion bash > oc_bash_completion
+sudo cp oc_bash_completion /etc/bash_completion.d/
+oc login -u USERNAME https://api.${CLUSTER-DOMAIN.NAME}:6443
+    -p
+    --certificate-authority=''
+    --insecure-skip-tls-verify=false
+    --token
+oc whoami
+oc whoami --show-server
+oc whoami --show-console
+oc whoami --show-token
+oc version
+
+//kubeconfig transfer
+export KUBECONFIG=$HOME/.kube/new-cluster
+oc --config=CONFIGFILEPATH
+
+//help
+oc -h
+oc get -h       oc get pods -h
+oc options
+
+oc status
+oc describe <RESOURCE-TYPE> <RESOURCE-NAME>
+oc get events --sort-by='.lastTimestamp'
+oc --loglevel=0 <OPERATION>
+oc debug dc/DC-NAME
+oc explain pod.spec.containers.readinessProbe.httpGet
+
+    -o wide
+    -o yaml     //more details
+    -o json/go-template=/jsonpath=
+    -o custom-columns=
+
+=====================
+ssh <link>
+oc login  https://api.shared-na4.na4.openshift.opentlc.com:6443
+    pallav_walavalkar-persistent.com
+    <password>
+
+export KUBECONFIG=$HOME/.kube/config
+
+====================
+oc new-project <NAME> --display-name=<DISPLAYNAME> --description=<DESCRIPTION>
+oc projects
+//make this project as default
+oc project <NAME>
+oc -n <NAME> <other commands>
+
+===================
+oc new-app 
+oc expose 
+oc create route
+oc scale --replicas=<integer>
+oc autoscale

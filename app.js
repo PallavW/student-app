@@ -25,8 +25,8 @@ app.use('/', indexRouter);
 //http://localhost/student
 /*
 node app.js
-curl http://localhost:80/students
-curl -i -X POST -H 'Accept: application/json' -H 'Content-type: application/json' http://localhost:80/students -d "name=Tasha&class=BBA&marks=65"
+curl http://localhost:8080/students
+curl -i -X POST -H 'Accept: application/json' -H 'Content-type: application/json' http://localhost:8080/students -d "name=Tasha&class=BBA&marks=65"
 */
 app.use('/students', studentsRouter);
 
