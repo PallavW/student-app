@@ -37,8 +37,8 @@ oc explain pod.spec.containers.readinessProbe.httpGet
 =====================
 ssh <link>
 oc login  https://api.shared-na4.na4.openshift.opentlc.com:6443
-    pallav_walavalkar-persistent.com
-    <password>
+    <OpenTLC login username>
+    <OpenTLC login password>
 
 export KUBECONFIG=$HOME/.kube/config
 
